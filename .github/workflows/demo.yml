@@ -1,0 +1,11 @@
+name: Demo Workflow
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      NODE_ENV: production   # 🌐 Global mặc định
+    steps:
+      - run: echo "Build running in $NODE_ENV"
